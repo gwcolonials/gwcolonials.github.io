@@ -39,4 +39,11 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  //typed
+  var typed = new Typed('.typed', {
+    strings: ["User Research.", "Usability Testing.", "User Flow.", "User Journey Mapping.", "Information Architecture.", "Prototyping.", "Growth Hacking.", "Sketch.", "InVision.", "Adobe XD.", "HTML/CSS/Javascript.", "jQuery.", "Principle.", "Photoshop.", "Google Analytics."],
+    typeSpeed: 80,
+    backSpeed: 40,
+    loop: true
+  });
 })(jQuery); // End of use strict

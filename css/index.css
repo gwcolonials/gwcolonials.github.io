@@ -364,7 +364,7 @@ footer {
 
 
 
-span {
+.masthead span {
   position: absolute;
   left: 50%;
   width: 1rem;
@@ -377,6 +377,12 @@ span {
   -webkit-animation: sdb05 1.5s infinite;
   animation: sdb05 1.5s infinite;
   box-sizing: border-box;
+
+}
+
+#about h3,
+#about span {
+  font-size: 1.5rem;
 
 }
 
