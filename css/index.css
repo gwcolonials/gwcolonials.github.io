@@ -235,6 +235,7 @@
 .about-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color: #efefef;
 
 }
 
@@ -285,7 +286,17 @@
   margin-bottom: 5rem;
 }
 
+.arrows-1_minimal-left:before {
+  content: "<";
+  font-weight: bold;
+  font-size: 2rem;
+}
 
+.arrows-1_minimal-right:before {
+  content: ">";
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 
 
@@ -420,4 +431,175 @@ background-color: rgb(248, 249, 250);
 
 footer {
   background-color: #ffffff;
+}
+
+
+/* flight */
+#portfolio .recordofflight {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientbg 30s ease infinite;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.flight {
+  text-align: left;
+  margin: 2rem 2rem;
+}
+
+.flight h3{
+  margin: auto;
+  opacity: 0;
+}
+
+.flight p{
+  margin-bottom: : 1rem;
+}
+
+.flexbox:before,
+.flexbox:after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #fff;
+  position: absolute;
+  z-index: 2;
+  opacity: .3;
+  transition: .3s;
+}
+.flexbox:before {
+  top: 1rem;
+  right: 2rem;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+.flexbox:after {
+  bottom: 1rem;
+  left: 2rem;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.recordofflight:hover .flexbox:before,
+.recordofflight:hover .flexbox:after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 2rem);
+  opacity: .7;
+}
+
+@keyframes gradientbg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* clouds */
+.clouds{
+	width: 100vw;
+	height: 40%;
+	background: url("../img/cloud4new.png") no-repeat ;
+	background-size: 600px 300px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+
+.clouds2{
+	width: 100vw;
+	height: 40%;
+	background: url("../img/cloud5new.png") no-repeat;
+	background-size: 600px 300px;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    z-index: 4;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+
+.clouds3{
+	width: 100vw;
+	height: 40%;
+	background: url("../img/cloud4new.png") no-repeat ;
+	background-size: 600px 300px;
+    position: absolute;
+    top: -5%;
+    left: -30%;
+    z-index: 5;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+
+.cloudsbox {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+@-moz-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 0px);
+	}
 }
