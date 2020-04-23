@@ -163,6 +163,11 @@
   margin-top: 0;
 }
 
+.title1 {
+  position: relative;
+  z-index: 2;
+}
+
 
 
 .masthead h1 {
@@ -512,11 +517,11 @@ footer {
 	width: 100vw;
 	height: 40%;
 	background: url("../img/cloud4new.png") no-repeat ;
-	background-size: 600px 300px;
+	background-size: 600px 35vh;
     position: absolute;
     top: 10%;
     left: 10%;
-    z-index: 3;
+    z-index: 11;
 
    -moz-animation:move-background 150s linear infinite;
   -ms-animation:move-background 150s linear infinite;
@@ -529,11 +534,11 @@ footer {
 	width: 100vw;
 	height: 40%;
 	background: url("../img/cloud5new.png") no-repeat;
-	background-size: 600px 300px;
+	background-size: 600px 35vh;
     position: absolute;
     top: 0;
     left: 60%;
-    z-index: 4;
+    z-index: 12;
 
    -moz-animation:move-background 150s linear infinite;
   -ms-animation:move-background 150s linear infinite;
@@ -546,11 +551,28 @@ footer {
 	width: 100vw;
 	height: 40%;
 	background: url("../img/cloud4new.png") no-repeat ;
-	background-size: 600px 300px;
+	background-size: 600px 35vh;
     position: absolute;
-    top: -5%;
-    left: -30%;
-    z-index: 5;
+    top: -10%;
+    left: -40%;
+    z-index: 13;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+
+.clouds4{
+	width: 100vw;
+	height: 40%;
+	background: url("../img/cloud4new.png") no-repeat ;
+	background-size: 500px 30vh;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 2;
 
    -moz-animation:move-background 150s linear infinite;
   -ms-animation:move-background 150s linear infinite;
@@ -563,7 +585,17 @@ footer {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 11;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.cloudsbox2 {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
